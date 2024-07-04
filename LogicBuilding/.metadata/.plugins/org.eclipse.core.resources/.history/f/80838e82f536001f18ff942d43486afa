@@ -1,0 +1,23 @@
+
+public class FindElement 
+{
+	int findSecondLargestElement(int ar[]) {
+		
+		int max1=ar[0];
+		int max2=ar[1];
+		for(int i=2;i<ar.length;i++)
+		{
+			if(max1<ar[i])
+			{
+				max1=ar[i];
+				max2=max1;
+			}
+			else if(max2<ar[i])
+			{
+				max2=ar[i];
+			}
+				
+		}
+		return max2;
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class LaunchMain 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter how many elements you want to store in the array");
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+
+	}
+
+}

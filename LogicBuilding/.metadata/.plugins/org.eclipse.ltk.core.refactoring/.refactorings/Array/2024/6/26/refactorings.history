@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;SecondLargestElement.java&apos; to &apos;FindElement.java&apos;&#x0D;&#x0A;- Original project: &apos;Array&apos;&#x0D;&#x0A;- Original element: &apos;SecondLargestElement.java&apos;&#x0D;&#x0A;- Renamed element: &apos;FindElement.java&apos;" description="Rename compilation unit &apos;SecondLargestElement.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{SecondLargestElement.java" name="FindElement.java" references="false" stamp="1719594229903" version="1.0"/>
+</session>
