@@ -1,8 +1,0 @@
-
-public class FindElement 
-{
-	int findSecondLargestElement(int ar[]) {
-		
-		return 2;
-	}
-}
