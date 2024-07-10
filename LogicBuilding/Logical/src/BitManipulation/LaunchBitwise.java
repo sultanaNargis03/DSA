@@ -18,9 +18,21 @@ public class LaunchBitwise {
 	}
 	public static int toggle(int n)
 	{
-		int i=4;
+		int i=5;
 		int tMask=1<<i;
 		return (n^tMask);
+		
+	}
+	public static void checkOnorOff(int n)
+	{
+		int i=5;
+		int mask=1<<i;
+		if((n&mask)==0)
+			System.out.println("OFF");
+		else
+			System.out.println("ON");
+		
+		
 		
 	}
 	public static String d2b(int  n)
@@ -45,15 +57,20 @@ public class LaunchBitwise {
 		
 		System.out.println("number in binary  "+n+"->"+d2b(n));
 		
+		
 		int on=switchOn(n);
 		int off=switchOff(n);
 		int tog=toggle(n);
 		
 		String binOn=d2b(on);
 		String binOff=d2b(off);
+		
 		System.out.println("switch on ith bit "+on+"->"+ binOn);
 		System.out.println("switch off ith bit "+off+"->"+binOff );
-		System.out.println("Toggle th ith bit "+tog+"->"+d2b(tog));
+		System.out.println("toggle the ith bit "+tog+"->"+d2b(tog));
+		
+		checkOnorOff(n);
+		
 
 	}
 
