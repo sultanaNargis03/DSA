@@ -16,14 +16,23 @@ public class LaunchBitwise {
 		return (n&offMask);
 		
 	}
+	public static int toggle(int n)
+	{
+		int i=4;
+		int tMask=1<<i;
+		return (n^tMask);
+		
+	}
 	public static String d2b(int  n)
 	{
 		String res="";
-		while(n>0)
+		int index=0;
+		while(index<8)
 		{
 			int rem=n%2;
 			res=rem+res;
 			n=n/2;
+			index++;
 		}
 		return res;
 	}
@@ -34,15 +43,17 @@ public class LaunchBitwise {
 		
 		int n=36; //bin=>00100100
 		
-		System.out.println(d2b(n));
+		System.out.println("number in binary  "+n+"->"+d2b(n));
 		
 		int on=switchOn(n);
 		int off=switchOff(n);
+		int tog=toggle(n);
 		
 		String binOn=d2b(on);
 		String binOff=d2b(off);
 		System.out.println("switch on ith bit "+on+"->"+ binOn);
 		System.out.println("switch off ith bit "+off+"->"+binOff );
+		System.out.println("Toggle th ith bit "+tog+"->"+d2b(tog));
 
 	}
 
